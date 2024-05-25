@@ -1,38 +1,62 @@
 .App {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-bottom: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-group label {
+  margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group textarea,
+.form-group select {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
+
+button {
+  width: 150px;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.output-group {
+  margin-top: 20px;
+}
+
+.output-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.output-group textarea {
+  width: 600px;
+  height: 200px;
+  padding: 10px;
+}
+
